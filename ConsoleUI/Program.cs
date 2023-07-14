@@ -3,15 +3,12 @@ using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 
-//CarManager carManager = new CarManager(new EfCarDal());
-BrandManager brandManager = new BrandManager(new EfBrandDal());
+CarManager carManager = new CarManager(new EfCarDal());
+ColorManager colorManager = new ColorManager(new EfColorDal());
 
-brandManager.Add(new Brand() { Name = "Audi" });
-brandManager.Add(new Brand() { Name = "Mercedes" });
-brandManager.Add(new Brand() { Name = "Bmw" });
-brandManager.Add(new Brand() { Name = "Volvo" });
-brandManager.Add(new Brand() { Name = "Hyundai" });
-brandManager.Add(new Brand() { Name = "Volkswagen" });
-
+//foreach (var car in carManager.GetCarDetails())
+//{
+//    Console.WriteLine("{0} {1} {2} {3}",car.BrandName,car.CarModel,car.ColorName,car.DailyPrice);
+//}
 
 
