@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2jHVX2LaK3W6WgktkoBRvmvNOiZ4pFH2P61GFUfDEsHBc62ZjenRcR1hUAnlFOT7L9WM1ZPypn1GG3SbaG3Ebg==",
+  "dgSpecHash": "MOE/ycOskRf3iIExH+5thNYxCAIMbbfXo7AGnm/t9dnRwcqmy47dinydCZuK718CSAgfXCuL1k5O6CyRWe5IDQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\yusuf\\.nuget\\packages\\autofac\\7.0.1\\autofac.7.0.1.nupkg.sha512",
+    "C:\\Users\\yusuf\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\yusuf\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
