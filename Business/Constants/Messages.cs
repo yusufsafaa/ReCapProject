@@ -16,5 +16,10 @@ namespace Business.Constants
 
         //Rental
         public static string InvalidRental = "Arabanın teslim tarihi bilgisi boş olamaz";
+        
+        //CarImage
+        public static string CarImageLimitExceeded="Maksimum resim sayısına ulaşıldı!";
+        public static string ImageAdded="Resim eklendi";
+        public static string ImageOfCarNotFound="Arabanın resmi bulunamadı";
     }
 }
