@@ -91,3 +91,5 @@ C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\Autofac.Extensi
 C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\Autofac.Extras.DynamicProxy.dll
 C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\Castle.Core.dll
 C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
