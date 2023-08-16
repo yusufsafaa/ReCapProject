@@ -39,6 +39,8 @@ builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory()).Conf
     builder.RegisterModule(new AutofacBusinessModule());
 });
 
+builder.Services.AddCors();
+
 var tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -73,7 +75,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(builder => builder.WithOrigins("http://localhost:4300").AllowAnyHeader());
+
 app.UseHttpsRedirection();
+
+app.UseStaticFiles();
 
 app.UseAuthorization();
 

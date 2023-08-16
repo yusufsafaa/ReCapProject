@@ -7,6 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Uploads\CarImages217b521e-8b92-4b32-9dce-e569a0a5385a.jpg" />
+    <None Include="wwwroot\Uploads\CarImages2dfe0e14-4bcd-45d8-951b-f5fa3793d384.jpg" />
+    <None Include="wwwroot\Uploads\CarImages42a2e044-59ed-495f-85a0-53c5aa74ac50.jpg" />
+    <None Include="wwwroot\Uploads\CarImages5c738c9f-4ef2-4ef6-b9a0-6001ba1cec47.jpg" />
+    <None Include="wwwroot\Uploads\CarImages76be08f0-5dc3-441b-bb2c-23e19b642430.jpg" />
+    <None Include="wwwroot\Uploads\CarImages780b9721-d4ee-4c93-8b3f-e0d6bfbc60be.jpg" />
+    <None Include="wwwroot\Uploads\CarImages9ea581d6-7459-4554-8463-3fcb6720bb3a.jpg" />
+    <None Include="wwwroot\Uploads\CarImagesadd49d1f-969b-4b09-b77f-c695df8e3eff.jpg" />
+    <None Include="wwwroot\Uploads\CarImagesafd7ec45-78a5-4c12-a064-efacb1a924ef.jpg" />
+    <None Include="wwwroot\Uploads\CarImagesb5851959-09f7-42a8-bb6a-24a04f2350ab.jpg" />
+    <None Include="wwwroot\Uploads\CarImagesb71fac72-9c7f-49f3-9a1d-0af6a6cab60c.jpg" />
+    <None Include="wwwroot\Uploads\CarImagesc76c8aac-5502-43e4-aa23-d9e3e249d4de.jpg" />
+    <None Include="wwwroot\Uploads\CarImagesd25842fe-60b9-4dd7-a6cc-cdd03dfc6dd2.jpeg" />
+    <None Include="wwwroot\Uploads\CarImagesd310d181-52f9-4286-8d91-5fe06d3627cb.jpg" />
+    <None Include="wwwroot\Uploads\CarImagesf815ecbe-ddab-4d43-a275-aa8961aac6eb.jpg" />
+    <None Include="wwwroot\Uploads\CarImagesfbae32dc-f804-4cff-9252-f7d789679ab1.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.8" />

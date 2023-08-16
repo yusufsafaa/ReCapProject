@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImages217b521e-8b92-4b32-9dce-e569a0a5385a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImages217b521e-8b92-4b32-9dce-e569a0a5385a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImages2dfe0e14-4bcd-45d8-951b-f5fa3793d384.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImages2dfe0e14-4bcd-45d8-951b-f5fa3793d384.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImages42a2e044-59ed-495f-85a0-53c5aa74ac50.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImages42a2e044-59ed-495f-85a0-53c5aa74ac50.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImages5c738c9f-4ef2-4ef6-b9a0-6001ba1cec47.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImages5c738c9f-4ef2-4ef6-b9a0-6001ba1cec47.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImages76be08f0-5dc3-441b-bb2c-23e19b642430.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImages76be08f0-5dc3-441b-bb2c-23e19b642430.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImages780b9721-d4ee-4c93-8b3f-e0d6bfbc60be.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImages780b9721-d4ee-4c93-8b3f-e0d6bfbc60be.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImages87f9f292-a1d3-4b7f-8e2e-75ef216ff38e.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImages87f9f292-a1d3-4b7f-8e2e-75ef216ff38e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImages9ea581d6-7459-4554-8463-3fcb6720bb3a.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImages9ea581d6-7459-4554-8463-3fcb6720bb3a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesadd49d1f-969b-4b09-b77f-c695df8e3eff.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesadd49d1f-969b-4b09-b77f-c695df8e3eff.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesafd7ec45-78a5-4c12-a064-efacb1a924ef.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesafd7ec45-78a5-4c12-a064-efacb1a924ef.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesb5851959-09f7-42a8-bb6a-24a04f2350ab.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesb5851959-09f7-42a8-bb6a-24a04f2350ab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesb71fac72-9c7f-49f3-9a1d-0af6a6cab60c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesb71fac72-9c7f-49f3-9a1d-0af6a6cab60c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesc76c8aac-5502-43e4-aa23-d9e3e249d4de.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesc76c8aac-5502-43e4-aa23-d9e3e249d4de.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesd25842fe-60b9-4dd7-a6cc-cdd03dfc6dd2.jpeg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesd25842fe-60b9-4dd7-a6cc-cdd03dfc6dd2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesd310d181-52f9-4286-8d91-5fe06d3627cb.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesd310d181-52f9-4286-8d91-5fe06d3627cb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesf815ecbe-ddab-4d43-a275-aa8961aac6eb.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesf815ecbe-ddab-4d43-a275-aa8961aac6eb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yusuf\\source\\repos\\ReCapProject\\WebAPI\\wwwroot\\Uploads\\CarImagesfbae32dc-f804-4cff-9252-f7d789679ab1.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\CarImagesfbae32dc-f804-4cff-9252-f7d789679ab1.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebAPI.props",
+      "PackagePath": "build\\WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebAPI.props",
+      "PackagePath": "buildTransitive\\WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
