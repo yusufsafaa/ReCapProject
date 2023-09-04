@@ -94,3 +94,4 @@ C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\FluentValidatio
 C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\WebAPI.staticwebassets.runtime.json
+C:\Users\yusuf\source\repos\ReCapProject\WebAPI\bin\Debug\net7.0\Newtonsoft.Json.dll

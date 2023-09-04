@@ -15,6 +15,12 @@ namespace Business.Constants
         public static string CarUpdated = "Araba bilgileri güncellendi";
         public static string InvalidCarInfo = "Girdiğiniz bilgiler geçersiz tekrar deneyin";
 
+        //Color
+        public static string ColorAdded = "Renk eklendi";
+
+        //Brand
+        public static string BrandAdded = "Marka eklendi";
+
         //Rental
         public static string InvalidRental = "Arabanın teslim tarihi bilgisi boş olamaz";
         
