@@ -98,3 +98,4 @@ C:\Users\yusuf\source\repos\ReCapProject\ConsoleUI\bin\Debug\net7.0\Microsoft.As
 C:\Users\yusuf\source\repos\ReCapProject\ConsoleUI\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\yusuf\source\repos\ReCapProject\ConsoleUI\bin\Debug\net7.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\yusuf\source\repos\ReCapProject\ConsoleUI\bin\Debug\net7.0\Microsoft.Net.Http.Headers.dll
+C:\Users\yusuf\source\repos\ReCapProject\ConsoleUI\bin\Debug\net7.0\Newtonsoft.Json.dll
