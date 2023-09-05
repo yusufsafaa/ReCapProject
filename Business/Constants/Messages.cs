@@ -32,11 +32,11 @@ namespace Business.Constants
         public static string AuthorizationDenied="Yetkilendirme hatası!";
 
         //Auth
-        public static string AccessTokenCreated="AccessToken oluşturuldu";
+        public static string AccessTokenCreated="Giriş yapıldı.";
         public static string UserAlreadyExists="Kullanıcı zaten kayıtlı";
         public static string UserRegistered="Kullanıcı kaydı yapıldı";
         public static string SuccessfulLogin="Giriş başarılı";
-        public static string PasswordError="Hatalı şifre girişi";
+        public static string PasswordError="Hatalı parola";
         public static string UserNotFound="Kullanıcı bulunamadı";
     }
 }

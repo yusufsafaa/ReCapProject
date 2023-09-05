@@ -21,16 +21,16 @@ namespace WebAPI.Controllers
             var userToLogin = _authService.Login(userForLoginDto);
             if (!userToLogin.Success)
             {
-                return BadRequest(userToLogin.Message);
+                return BadRequest(userToLogin);
             }
 
             var result = _authService.CreateAccessToken(userToLogin.Data);
             if (!result.Success)
             {
-                return BadRequest(result.Message);
+                return BadRequest(result);
             }
 
-            return Ok(result.Data);
+            return Ok(result);
         }
 
         [HttpPost("register")]
@@ -39,17 +39,17 @@ namespace WebAPI.Controllers
             var checkUserExists = _authService.UserExists(userForRegisterDto.Email);
             if (!checkUserExists.Success)
             {
-                return BadRequest(checkUserExists.Message);
+                return BadRequest(checkUserExists);
             }
 
             var registerResult = _authService.Register(userForRegisterDto);
             var result = _authService.CreateAccessToken(registerResult.Data);
             if (!result.Success)
             {
-                return BadRequest(result.Message);
+                return BadRequest(result);
             }
 
-            return Ok(result.Data);
+            return Ok(result);
         }
     }
 }

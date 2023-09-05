@@ -52,6 +52,18 @@ namespace Core.Extensions
                 }.ToString()); ;
             }
 
+            if (e.GetType() == typeof(UnauthorizedAccessException))
+            {
+                message = "Bu işlemi yapmak için yetkiniz yok!";
+                httpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
+
+                return httpContext.Response.WriteAsync(new ErrorDetails()
+                {
+                    StatusCode = 401,
+                    Message = message
+                }.ToString());
+            }
+
             return httpContext.Response.WriteAsync(new ErrorDetails
             {
                 StatusCode = httpContext.Response.StatusCode,
