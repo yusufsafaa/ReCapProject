@@ -27,8 +27,8 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("  ")]
-        public IActionResult GetByUserId(int userId)
+        [HttpGet("getcustomerbyuserid")]
+        public IActionResult GetCustomerByUserId(int userId)
         {
             var result = _customerService.GetById(userId);
             if (result.Success)

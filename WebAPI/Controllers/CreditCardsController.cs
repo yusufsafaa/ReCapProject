@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Entities.Concrete;
 using Entities.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,26 +11,17 @@ namespace WebAPI.Controllers
     public class CreditCardsController : ControllerBase
     {
         private ICustomerCreditCardService _customerCreditCardService;
-        public CreditCardsController(ICustomerCreditCardService customerCreditCardService)
+        private ICreditCardService _creditCardService;
+        public CreditCardsController(ICustomerCreditCardService customerCreditCardService, ICreditCardService creditCardService)
         {
             _customerCreditCardService = customerCreditCardService;
-        }
-
-        [HttpPost("getcreditcardsbycustomerid")]
-        public IActionResult GetCreditCardsByCustomerId(int customerId)
-        {
-            var result = _customerCreditCardService.GetSavedCreditCardsByCustomerId(customerId);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
+            _creditCardService = creditCardService;
         }
 
         [HttpPost("savecreditcard")]
-        public IActionResult SaveCreditCard(CustomerCreditCardModel customerCreditCardModel)
+        public IActionResult SaveCreditCard(CreditCard creditCard)
         {
-            var result = _customerCreditCardService.SaveCustomerCreditCard(customerCreditCardModel);
+            var result = _creditCardService.Add(creditCard);
             if (result.Success)
             {
                 return Ok(result);
@@ -38,10 +30,10 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpPost("deletecreditcard")]
-        public IActionResult DeleteCreditCard(CustomerCreditCardModel customerCreditCardModel)
+        [HttpPost("savecreditcardtocustomer")]
+        public IActionResult SaveCreditCardToCustomer(CustomerCreditCard customerCreditCard)
         {
-            var result = _customerCreditCardService.DeleteCustomerCreditCard(customerCreditCardModel);
+            var result = _customerCreditCardService.Add(customerCreditCard);
             if (result.Success)
             {
                 return Ok(result);

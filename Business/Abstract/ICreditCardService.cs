@@ -14,5 +14,6 @@ namespace Business.Abstract
         IDataResult<CreditCard> GetById(int creditCardId);
         IResult Validate(CreditCard creditCard);
         IResult Update(CreditCard creditCard);
+        IDataResult<int> Add(CreditCard creditCard);
     }
 }

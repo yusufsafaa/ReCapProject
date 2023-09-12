@@ -28,5 +28,6 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<CreditCard> CreditCards { get; set; }
         public DbSet<CustomerCreditCard> CustomerCreditCards { get; set; }
         public DbSet<Payment> Payments { get; set; }
+        public DbSet<Cart> Carts { get; set; }
     }
 }

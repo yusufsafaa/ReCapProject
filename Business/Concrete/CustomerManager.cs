@@ -18,10 +18,10 @@ namespace Business.Concrete
         {
             _customerDal = customerDal;
         }
-        public IResult Add(Customer customer)
+        public IDataResult<Customer> Add(Customer customer)
         {
             _customerDal.Add(customer);
-            return new SuccessResult();
+            return new SuccessDataResult<Customer>(customer);
         }
 
         public IResult Delete(Customer customer)

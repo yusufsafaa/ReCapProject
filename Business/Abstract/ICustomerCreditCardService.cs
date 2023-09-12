@@ -11,8 +11,6 @@ namespace Business.Abstract
 {
     public interface ICustomerCreditCardService
     {
-        IDataResult<List<CreditCard>> GetSavedCreditCardsByCustomerId(int customerId);
-        IResult SaveCustomerCreditCard(CustomerCreditCardModel customerCreditCardModel);
-        IResult DeleteCustomerCreditCard(CustomerCreditCardModel customerCreditCardModel);
+        IResult Add(CustomerCreditCard customerCreditCard);
     }
 }

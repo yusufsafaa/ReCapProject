@@ -53,5 +53,6 @@ namespace Business.Constants
         public static string CustomerCreditCardNotFound="Müşteri kredi kartı bulunamadı";
         public static string InsufficientCardBalance="Yetersiz kart bakiyesi";
         public static string PaymentSuccessful="Ödeme başarıyla gerçekleştirildi";
+        public static string SaveNewCreditCard="Bir sonraki satın alımlarınız için kartınız kaydedildi";
     }
 }

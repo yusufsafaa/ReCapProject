@@ -18,6 +18,13 @@ namespace Business.Concrete
         {
             _creditCardDal = creditCardDal;
         }
+
+        public IDataResult<int> Add(CreditCard creditCard)
+        {
+            _creditCardDal.Add(creditCard);
+            return new SuccessDataResult<int>(creditCard.Id,Messages.SaveNewCreditCard);
+        }
+
         public IDataResult<CreditCard> Get(string cardNumber, string expireYear, string expireMonth, string cvc, string cardHolderFullName)
         {
             var creditCard=GetCreditCardByCardInfo(cardNumber,expireYear,expireMonth,cvc,cardHolderFullName);
