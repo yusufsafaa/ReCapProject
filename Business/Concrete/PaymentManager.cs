@@ -14,35 +14,32 @@ namespace Business.Concrete
     public class PaymentManager : IPaymentService
     {
         IPaymentDal _paymentDal;
-        ICreditCardService _creditCardService;
-        public PaymentManager(IPaymentDal paymentDal, ICreditCardService creditCardService)
+        public PaymentManager(IPaymentDal paymentDal)
         {
             _paymentDal = paymentDal;
-            _creditCardService = creditCardService;
-
         }
-        public IDataResult<int> Pay(CreditCard creditCard, int customerId, decimal amount)
+
+        public IDataResult<int> Add(Payment payment)
         {
-            var result = _creditCardService.Validate(creditCard);
+            _paymentDal.Add(payment);
+            return new SuccessDataResult<int>(payment.Id,Messages.SuccessfulPayment);
+        }
 
-            if (result.Success)
-            {
-                if (creditCard.Balance < amount)
-                {
-                    return new ErrorDataResult<int>(-1, Messages.InsufficientCardBalance);
-                }
+        public IDataResult<Payment> GetLastPaymentOfCustomer(int customerId)
+        {
+            var payments=_paymentDal.GetAll(p=>p.CustomerId==customerId);
 
-                creditCard.Balance -= amount;
-                _creditCardService.Update(creditCard);
-                DateTime paymentDate = DateTime.Now;
-                
-                _paymentDal.Add(new Payment { Amount = amount, CustomerId = customerId, CreditCardId = creditCard.Id, PaymentDate = paymentDate });
+            //Payment currentPayment = payments[0];
+            //foreach (var payment in payments)
+            //{
+            //    if  (payment.PaymentDate < currentPayment.PaymentDate)
+            //    {
+            //        currentPayment= payment;
+            //    }
+            //}
 
-                var paymentId = _paymentDal.Get(p => p.CustomerId == customerId && p.Amount == amount && p.CreditCardId == creditCard.Id && (p.PaymentDate.Date == paymentDate.Date && p.PaymentDate.Hour == paymentDate.Hour && p.PaymentDate.Second == paymentDate.Second)).Id;
-                return new SuccessDataResult<int>(paymentId, Messages.PaymentSuccessful);
-            }
-
-            return new ErrorDataResult<int>(-1, result.Message);
+            var lastPayment = payments.OrderByDescending(p => p.PaymentDate).First();
+            return new SuccessDataResult<Payment>(lastPayment);
         }
     }
 }

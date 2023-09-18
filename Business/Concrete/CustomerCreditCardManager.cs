@@ -3,7 +3,6 @@ using Business.Constants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

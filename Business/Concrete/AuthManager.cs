@@ -5,6 +5,7 @@ using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
 using Core.Utilities.Security.Jwt;
 using Entities.DTOs;
+using Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,29 @@ namespace Business.Concrete
             _userService = userService;
             _tokenHelper = tokenHelper;
         }
+
+        public IResult ChangePassword(ChangePasswordModel changePasswordModel)
+        {
+            UserForLoginDto userToChanged = new UserForLoginDto()
+            {
+                Email = changePasswordModel.Email,
+                Password = changePasswordModel.OldPassword
+            };
+
+            var loginResult=Login(userToChanged);
+            if (loginResult.Success)
+            {
+                var user = loginResult.Data;
+                byte[] passwordHash, passwordSalt;
+                HashingHelper.CreatePasswordHash(changePasswordModel.NewPassword, out passwordHash, out passwordSalt);
+                user.PasswordHash = passwordHash;
+                user.PasswordSalt = passwordSalt;
+                _userService.Update(user);
+                return new SuccessResult(Messages.PasswordChanged);
+            }
+            return new ErrorResult(Messages.PasswordError);
+        }
+
         public IDataResult<AccessToken> CreateAccessToken(User user)
         {
             var claims = _userService.GetClaims(user);

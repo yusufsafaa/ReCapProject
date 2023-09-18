@@ -54,5 +54,7 @@ namespace Business.Constants
         public static string InsufficientCardBalance="Yetersiz kart bakiyesi";
         public static string PaymentSuccessful="Ödeme başarıyla gerçekleştirildi";
         public static string SaveNewCreditCard="Bir sonraki satın alımlarınız için kartınız kaydedildi";
+        public static string SuccessfulPayment="Ödeme işlemi başarıyla gerçekleşti";
+        public static string PasswordChanged = "Şifre başarıyla değiştirildi";
     }
 }
