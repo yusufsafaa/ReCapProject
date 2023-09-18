@@ -1,9 +1,11 @@
 ﻿using Business.Abstract;
+using Business.Constants;
 using Core.Entities.Concrete;
 using Core.Utilities;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,6 +57,21 @@ namespace Business.Concrete
         {
             _userDal.Update(user);
             return new SuccessResult();
+        }
+
+        public IResult UpdateByModel(ChangeUserProfileModel userToUpdated)
+        {
+            var userResult=_userDal.Get(u=>u.Id==userToUpdated.Id && u.Email==userToUpdated.Email);
+            if (userResult == null)
+            {
+                return new ErrorResult(Messages.UserNotFound);
+            }
+            
+            userResult.FirstName= userToUpdated.FirstName;
+            userResult.LastName = userToUpdated.LastName;
+
+            _userDal.Update(userResult);
+            return new SuccessResult(Messages.UserUpdated);
         }
     }
 }
