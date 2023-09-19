@@ -29,15 +29,6 @@ namespace Business.Concrete
         {
             var payments=_paymentDal.GetAll(p=>p.CustomerId==customerId);
 
-            //Payment currentPayment = payments[0];
-            //foreach (var payment in payments)
-            //{
-            //    if  (payment.PaymentDate < currentPayment.PaymentDate)
-            //    {
-            //        currentPayment= payment;
-            //    }
-            //}
-
             var lastPayment = payments.OrderByDescending(p => p.PaymentDate).First();
             return new SuccessDataResult<Payment>(lastPayment);
         }

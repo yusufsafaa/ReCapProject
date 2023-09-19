@@ -57,5 +57,6 @@ namespace Business.Constants
         public static string SuccessfulPayment="Ödeme işlemi başarıyla gerçekleşti";
         public static string PasswordChanged = "Şifre başarıyla değiştirildi";
         public static string UserUpdated="Kullanıcı bilgileri başarıyla değiştirildi";
+        public static string CarIsNotSuitableOnSelectedDate="Aracın belirtilen tarihlerde kiralanması bulunuyor";
     }
 }

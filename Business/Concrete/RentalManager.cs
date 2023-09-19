@@ -31,6 +31,26 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
+        public IDataResult<bool> CheckIfCarCanBeRented(int carId, DateTime rentDate, DateTime returnDate)
+        {
+            var rentals = _rentalDal.GetAll(r => r.CarId == carId && r.DeliveryStatus==false);
+
+            if(rentals.Count==0)
+            {
+                return new SuccessDataResult<bool>(true);
+            }
+
+            foreach (var rental in rentals)
+            {
+                if ((rental.RentDate<=rentDate && rental.ReturnDate>=rentDate) || (rental.RentDate<=returnDate && rental.ReturnDate>=returnDate) )
+                {
+                    return new ErrorDataResult<bool>(false,Messages.CarIsNotSuitableOnSelectedDate);
+                }
+            }
+
+            return new SuccessDataResult<bool>(true);
+        }
+
         public IResult Delete(Rental rental)
         {
             _rentalDal.Delete(rental);
