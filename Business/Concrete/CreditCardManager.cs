@@ -14,9 +14,11 @@ namespace Business.Concrete
     public class CreditCardManager : ICreditCardService
     {
         ICreditCardDal _creditCardDal;
-        public CreditCardManager(ICreditCardDal creditCardDal)
+        ICustomerCreditCardService _customerCreditCardService;
+        public CreditCardManager(ICreditCardDal creditCardDal,ICustomerCreditCardService customerCreditCardService)
         {
             _creditCardDal = creditCardDal;
+            _customerCreditCardService = customerCreditCardService;
         }
 
         public IDataResult<int> Add(CreditCard creditCard)
@@ -45,6 +47,20 @@ namespace Business.Concrete
                 return new ErrorDataResult<CreditCard>(Messages.CreditCardNotFound);
             }
             return new SuccessDataResult<CreditCard>(creditCard,Messages.CreditCardListed);
+        }
+
+        public IDataResult<List<CreditCard>> GetCustomerCreditCards(int customerId)
+        {
+            var customerCreditCardsIdResult = _customerCreditCardService.GetCustomerCreditCardsId(customerId);
+
+            List<CreditCard> customerCreditCards = new List<CreditCard>();
+            foreach (var customerCreditCardId in customerCreditCardsIdResult.Data)
+            {
+                var creditCard = _creditCardDal.Get(c => c.Id == customerCreditCardId.CreditCardId);
+                customerCreditCards.Add(creditCard);
+            }
+
+            return new SuccessDataResult<List<CreditCard>>(customerCreditCards);
         }
 
         public IResult Update(CreditCard creditCard)

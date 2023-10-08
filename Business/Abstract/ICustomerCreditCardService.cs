@@ -11,5 +11,6 @@ namespace Business.Abstract
     public interface ICustomerCreditCardService
     {
         IResult Add(CustomerCreditCard customerCreditCard);
+        IDataResult<List<CustomerCreditCard>> GetCustomerCreditCardsId(int customerId);
     }
 }

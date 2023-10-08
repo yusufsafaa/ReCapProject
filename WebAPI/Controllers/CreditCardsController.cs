@@ -40,5 +40,17 @@ namespace WebAPI.Controllers
 
             return BadRequest(result);
         }
+
+        [HttpGet("getcustomercreditcards")]
+        public IActionResult GetCustomerCreditCards(int customerId)
+        {
+            var result = _creditCardService.GetCustomerCreditCards(customerId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result);
+        }
     }
 }
